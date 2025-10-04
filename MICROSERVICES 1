@@ -1,0 +1,18 @@
+package com.iot.platform.sensor;
+
+/**
+ * SensorDataService simulates reading data from IoT sensors.
+ * This microservice acts as the data ingestion layer for the IoT platform.
+ */
+public class SensorDataService {
+
+    // Simulate reading sensor data
+    public String readSensorData() {
+        return "Temperature: 25°C, Humidity: 60%";
+    }
+
+    public static void main(String[] args) {
+        SensorDataService service = new SensorDataService();
+        System.out.println(service.readSensorData());
+    }
+}
