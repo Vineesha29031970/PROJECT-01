@@ -1,0 +1,18 @@
+package com.iot.platform.sensor;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+/**
+ * Unit test for SensorDataService
+ */
+public class SensorDataServiceTest {
+
+    @Test
+    public void testReadSensorData() {
+        SensorDataService service = new SensorDataService();
+        String data = service.readSensorData();
+        // Check that the returned string contains the word "Temperature"
+        assertTrue(data.contains("Temperature"), "Sensor data should contain Temperature");
+    }
+}
